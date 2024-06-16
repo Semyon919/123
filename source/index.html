@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Кото - Кафе</title>
+    <title>Кото-Кафе</title>
     <link rel="stylesheet" href="css/style.css" />
     <link
       rel="preload"
@@ -23,7 +23,7 @@
   <body class="page__body">
     <header class="header">
       <ul class="header__list">
-        <li class="header__list-item header__list-item--flex">
+        <li class="header__list-item--flex">
           <svg
             width="44"
             height="44"
@@ -33,41 +33,39 @@
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <use href="img/icons/stack.svg#main-logo"></use>
+            <use href="img/icons/stack.svg#header-logo"></use>
           </svg>
-          <p class="header__title">Котокафе</p>
+          <h2 class="header__list-title">Котокафе</h2>
         </li>
         <li class="header__list-item">
-          <button type="button" class="header__list-button">
-            Купить билет
-          </button>
+          <a href="sell.html" class="header__list-link">Купить билет</a>
         </li>
       </ul>
     </header>
     <main class="main">
-      <section class="first-cafe">
-        <h1 class="first-cafe__title">Первое в России котокафе</h1>
-        <span class="first-cafe__text"
-          >Крупнейшее котокафе России, в котором живёт 50 кошек и котов,
-          и каждый из них ищет новый дом. Животных можно гладить,
-          фотографировать, играть с ними.</span
+      <section class="info-block">
+        <h1 class="info-block__title">Первое в России котокафе</h1>
+        <span class="info-block__text"
+          >Крупнейшее котокафе России, в котором живёт 50 кошек и котов, и
+          каждый из них ищет новый дом. Животных можно гладить, фотографировать,
+          играть с ними.</span
         >
-        <div class="first-cafe__box">
-          <p class="first-cafe__box-text">Рабочее время с 8:00 до 23:00</p>
+        <div class="info-block__time-box">
+          <p class="info-block__box-text">Рабочее время с 8:00 до 23:00</p>
         </div>
-        <div class="first-cafe__address-box">
+        <div class="info-block__address-box">
           <svg
             width="16"
             height="17"
             viewBox="0 0 16 17"
+            class="info-block__map-icon"
             role="img"
-            class="first-cafe__map-tag"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <use href="img/icons/stack.svg#first-map-tag"></use>
+            <use href="img/icons/stack.svg#map-icon"></use>
           </svg>
-          <p class="first-cafe__address-box-text">
+          <p class="info-block__box-address">
             Санкт-Петербург, набережная реки Карповки, дом 5, литера П
           </p>
         </div>
@@ -77,97 +75,97 @@
           width="203"
           height="159"
           viewBox="0 0 203 159"
-          fill="none"
-          role="img"
           class="stars-block__paw-icon"
+          role="img"
+          fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <use href="img/icons/stack.svg#paw-icon"></use>
+          <use href="img/icons/stack.svg#big-paw-icon"></use>
         </svg>
         <h2 class="stars-block__title">Наши звезды</h2>
         <ul class="stars-block__list">
           <li class="stars-block__list-item">
             <img
+              src="img/cat-laki.jpg"
+              alt="Кот Лаки."
               width="313"
               height="313"
-              src="img/laki-cat.jpg"
-              alt="Кот Лаки."
-              class="stars-block__cat-image"
               loading="lazy"
+              class="stars-block__cat-image"
             />
-            <h3 class="stars-block__list-title">Кот Лаки</h3>
-            <span class="stars-block__list-text"
-              >Крайне спокойный, ласковый малыш, который медленно, но уверенно
+            <h3 class="stars-block__list-item-title">Кот Лаки</h3>
+            <span class="stars-block__item-text"
+              >Крайне спокойный, ласковый малыш, который медленно, но уверенно
               перестаёт быть робким скромнягой</span
             >
           </li>
           <li class="stars-block__list-item">
             <img
+              src="img/basilio-cat.jpg"
+              alt="Кот Базилио."
               width="313"
               height="313"
-              src="img/bazilio-cat.jpg"
-              alt="Кот Базилио."
-              class="stars-block__cat-image"
               loading="lazy"
+              class="stars-block__cat-image"
             />
-            <h3 class="stars-block__list-title">Кот Базилио</h3>
-            <span class="stars-block__list-text"
+            <h3 class="stars-block__list-item-title">Кот Базилио</h3>
+            <span class="stars-block__item-text"
               >Прошлые хозяева отказались от него, и долгое время ему пришлось
               быть на передержке, привыкая к новой жизни.
             </span>
           </li>
           <li class="stars-block__list-item">
             <img
-              width="313"
-              height="313"
               src="img/siu-cat.jpg"
               alt="Кот Сью."
-              class="stars-block__cat-image"
+              width="313"
+              height="313"
               loading="lazy"
+              class="stars-block__cat-image"
             />
-            <h3 class="stars-block__list-title">Кошка Сью</h3>
-            <span class="stars-block__list-text"
-              >Эта юная красавица очень общительная и ласковая уже с первого
-              дня, как приехала в кафе</span
-            >
+            <h3 class="stars-block__list-item-title">Кошка Сью</h3>
+            <span class="stars-block__item-text"
+              >Эта юная красавица очень общительная и ласковая уже с первого
+              дня, как приехала в кафе
+            </span>
           </li>
         </ul>
+        <a href="#" class="stars-block__link">Купить билет</a>
         <svg
           width="111"
           height="158"
           viewBox="0 0 111 158"
-          fill="none"
-          role="img"
           class="stars-block__leaf-icon"
+          role="img"
+          fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
           <use href="img/icons/stack.svg#leaf-icon"></use>
         </svg>
-        <div class="stars-block__button-box">
-          <button type="button" class="stars-block__button">
-            Купить билет
-          </button>
-        </div>
       </section>
     </main>
     <footer class="footer">
-      <div class="footer__box">
-        <svg
-          width="44"
-          height="44"
-          viewBox="0 0 44 44"
-          class="footer__logo"
-          role="img"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <use href="img/icons/stack.svg#main-logo"></use>
-        </svg>
-        <p class="footer__title">Котокафе</p>
-      </div>
-      <div class="footer__data-box">
-        <p class="footer__data-box-text">Создано 2021</p>
-      </div>
+      <ul class="footer__list">
+        <li class="footer__list-item--flex">
+          <svg
+            width="44"
+            height="44"
+            viewBox="0 0 44 44"
+            class="footer__logo"
+            role="img"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <use href="img/icons/stack.svg#header-logo"></use>
+          </svg>
+          <h2 class="footer__list-title">Котокафе</h2>
+        </li>
+        <li class="footer__list-item">
+          <div class="footer__list-box">
+            <p class="footer__list-box-text">Создано 2021</p>
+          </div>
+        </li>
+      </ul>
     </footer>
   </body>
 </html>

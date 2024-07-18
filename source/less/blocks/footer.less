@@ -1,42 +1,93 @@
 .footer {
-  min-height: 80px;
-  padding: 18px 90px 0 90px;
-}
+  position: relative;
+  min-height: 254px;
+  padding: 32px 24px 30px 24px;
 
-.footer__list {
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 0;
-  margin: 0;
-}
+  &::before {
+    content: "";
+    position: absolute;
+    width: calc(100% - 48px);
+    height: 2px;
+    background-color: #373334;
+    left: 24px;
+    top: 120px;
+  }
 
-.footer__list-item {
-  &--flex {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 24px;
+  @media (min-width: @desktop-width) {
+    width: 1504px;
+    min-height: 324px;
+    padding: 59px 0 49px 0;
+    margin: 0 auto;
+
+    &::before {
+      width: 100%;
+      left: 0;
+      top: 183px;
+    }
   }
 }
 
-.footer__list-title {
-  font-size: 28px;
-  font-weight: 700;
-  line-height: 32px;
-  padding: 6px 0 0 0;
-  margin: 0;
+.footer__title {
+  font-weight: 500;
+  line-height: 22px;
+  text-align: center;
+  margin: 0 0 10px 0;
+
+  @media (min-width: @desktop-width) {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+    margin: 0 0 16px 0;
+    text-align: left;
+  }
 }
 
-.footer__list-box {
-  width: 146px;
-  min-height: 43px;
-  background-color: #fff6d9;
-  margin: 1px 0 0 0;
+.footer__list {
+  margin: 0 auto 48px auto;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  width: fit-content;
+
+  @media (min-width: @desktop-width) {
+    margin: 0 0 101px 0;
+  }
 }
 
-.footer__list-box-text {
-  margin: 0;
-  color: #333333;
-  padding: 8px 12px;
+.footer__item-link {
+  display: block;
+}
+
+.footer__line-box {
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.footer__text {
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  margin: 0 0 20px 0;
+
+  @media (min-width: @desktop-width) {
+    width: 264px;
+    text-align: left;
+    margin: 0;
+  }
+}
+
+.footer__logo-link {
+  display: block;
+  width: 69px;
+  height: 20px;
+  margin: 0 auto;
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+  }
 }

@@ -1,4 +1,4 @@
-.society-block {
+.main-news {
   padding: 0 24px;
   margin: 0 0 76px 0;
   position: relative;
@@ -23,19 +23,19 @@
   }
 }
 
-.society-block__box {
-  @media (min-width: @desktop-width) {
+.main-news__box {
+  @media (min-width: @920px) {
     display: flex;
     flex-direction: row-reverse;
     gap: 49px;
   }
 }
 
-.society-block__line-box {
+.main-news__line-box {
   display: flex;
 }
 
-.society-block__title {
+.main-news__title {
   font-size: 16px;
   line-height: 24px;
   color: #9f0023;
@@ -47,7 +47,7 @@
   }
 }
 
-.society-block__text {
+.main-news__text {
   font-size: 22px;
   font-weight: 500;
   line-height: 28px;
@@ -61,11 +61,17 @@
   }
 }
 
-.society-block__biathlete-picture {
+.main-news__biathlete-picture {
   display: block;
   margin: 0 auto 32px auto;
   width: 100%;
   aspect-ratio: 16 / 9;
+
+  @media (min-width: @920px) {
+    width: 500px;
+    height: 280px;
+    max-width: inherit;
+  }
 
   @media (min-width: @desktop-width) {
     width: 727px;
@@ -74,7 +80,7 @@
   }
 }
 
-.society-block__link {
+.main-news__link {
   display: block;
   width: 100%;
   min-height: 48px;
@@ -92,7 +98,7 @@
     display: none;
   }
 
-  @media (min-width: @desktop-width) {
+  @media (min-width: @920px) {
     display: none;
 
     &--desktop {
@@ -104,7 +110,7 @@
   }
 }
 
-.society-block__slider {
+.main-news__slider {
   margin: 0 0 0 -24px;
   padding: 12px 24px;
   width: calc(100% + 48px);
@@ -125,15 +131,15 @@
   }
 }
 
-.society-block__left-arrow-icon {
+.main-news__left-arrow-icon {
   margin: auto 0;
 }
 
-.society-block__right-arrow-icon {
+.main-news__right-arrow-icon {
   margin: auto 0;
 }
 
-.society-block__slide {
+.main-news__slide {
   width: 80%;
 
   @media (min-width: @desktop-width) {
@@ -144,13 +150,13 @@
   }
 }
 
-.society-block__slider-content {
+.main-news__slider-content {
   @media (min-width: @desktop-width) {
     width: 60%;
   }
 }
 
-.society-block__slider-image {
+.main-news__slider-image {
   display: block;
   margin: 0 auto 12px auto;
 
@@ -161,7 +167,7 @@
   }
 }
 
-.society-block__middle-title {
+.main-news__middle-title {
   font-size: 12px;
   font-weight: 300;
   line-height: 16px;
@@ -175,7 +181,7 @@
   }
 }
 
-.society-block__middle-text {
+.main-news__middle-text {
   display: block;
   font-size: 12px;
   line-height: 16px;

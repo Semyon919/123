@@ -255,21 +255,19 @@
         <h1 class="visually-hidden">
           Новостной сайт "Златоустовское Телевидение"
         </h1>
-        <section class="society-block">
-          <div class="society-block__box">
-            <div class="society-block__text-box">
-              <h2 class="society-block__title">Общество</h2>
-              <p class="society-block__text">
+        <section class="main-news">
+          <div class="main-news__box">
+            <div class="main-news__text-box">
+              <h2 class="main-news__title">Общество</h2>
+              <p class="main-news__text">
                 Гонка сильнейших. На стадионе имени Светланы Ишмуратовой
                 стартовал Чемпионат по биатлону
               </p>
-              <a
-                href="#"
-                class="society-block__link society-block__link--desktop"
+              <a href="#" class="main-news__link main-news__link--desktop"
                 >Читать</a
               >
             </div>
-            <div class="society-block__image-box">
+            <div class="main-news__image-box">
               <picture>
                 <source
                   type="image/webp"
@@ -296,7 +294,7 @@
                 <img
                   src="img/biathlete-mobile.jpg"
                   srcset="img/biathlete-mobile@2x.jpg 2x"
-                  class="society-block__biathlete-picture"
+                  class="main-news__biathlete-picture"
                   loading="lazy"
                   width="272"
                   height="188"
@@ -305,40 +303,40 @@
               </picture>
             </div>
           </div>
-          <a href="#" class="society-block__link">Читать</a>
-          <div class="society-block__slider swiper-container">
-            <div class="society-block__pagination swiper-pagination"></div>
-            <div class="society-block__wrapper swiper-wrapper">
-              <div class="society-block__slide swiper-slide">
-                <div class="society-block__slider-image">
+          <a href="#" class="main-news__link">Читать</a>
+          <div class="main-news__slider swiper-container">
+            <div class="main-news__pagination swiper-pagination"></div>
+            <div class="main-news__wrapper swiper-wrapper">
+              <div class="main-news__slide swiper-slide">
+                <div class="main-news__slider-image">
                   <img
                     src="img/slider-image.png"
                     alt="Картинка нацпроекта."
-                    class="society-block__slider-image"
+                    class="main-news__slider-image"
                     width="68"
                     height="68"
                   />
                 </div>
-                <div class="society-block__slider-content">
-                  <p class="society-block__middle-title">Нацпроект</p>
-                  <span class="society-block__middle-text"
+                <div class="main-news__slider-content">
+                  <p class="main-news__middle-title">Нацпроект</p>
+                  <span class="main-news__middle-text"
                     >Безопасные и качественные автомобильные дороги</span
                   >
                 </div>
               </div>
-              <div class="society-block__slide swiper-slide">
-                <div class="society-block__slider-image">
+              <div class="main-news__slide swiper-slide">
+                <div class="main-news__slider-image">
                   <img
                     src="img/slider-image.png"
                     alt="Картинка нацпроекта."
-                    class="society-block__slider-image"
+                    class="main-news__slider-image"
                     width="68"
                     height="68"
                   />
                 </div>
-                <div class="society-block__slider-content">
-                  <p class="society-block__middle-title">Нацпроект</p>
-                  <span class="society-block__middle-text"
+                <div class="main-news__slider-content">
+                  <p class="main-news__middle-title">Нацпроект</p>
+                  <span class="main-news__middle-text"
                     >Безопасные и качественные автомобильные дороги</span
                   >
                 </div>
@@ -353,9 +351,10 @@
               <a href="#" class="news-block__box-link">Все новости</a>
             </div>
           </div>
-          <ul class="news-block__list">
-            <li class="news-block__item">
-              <a href="#" class="news-block__item-link">
+          <article class="news-block__box">
+            <article class="news-block__item">
+              <div class="news-block__item-box">
+                <a href="#" class="news-block__item-link"> </a>
                 <picture>
                   <source
                     type="image/webp"
@@ -391,16 +390,21 @@
                 </picture>
                 <div class="news-block__item-line">
                   <p class="news-block__item-title">Коммуналка</p>
-                  <span class="news-block__item-date">02/01/2021</span>
+                  <time
+                    datetime="2021-01-02 15:00"
+                    class="news-block__item-date"
+                    >02/01/2021</time
+                  >
                 </div>
                 <span class="news-block__item-text"
                   >Домой по светлой улице. В Златоусте завершили монтаж сразу
                   двух новых линий наружного освещения</span
                 >
-              </a>
-            </li>
-            <li class="news-block__item">
-              <a href="#" class="news-block__item-link">
+              </div>
+            </article>
+            <article class="news-block__item">
+              <div class="news-block__item-box">
+                <a href="#" class="news-block__item-link"></a>
                 <picture>
                   <source
                     type="image/webp"
@@ -436,16 +440,21 @@
                 </picture>
                 <div class="news-block__item-line">
                   <p class="news-block__item-title">Медицина</p>
-                  <span class="news-block__item-date">02/01/2021</span>
+                  <time
+                    datetime="2021-01-02 15:00"
+                    class="news-block__item-date"
+                    >02/01/2021</time
+                  >
                 </div>
                 <span class="news-block__item-text"
                   >Ключи от медицинской помощи. «Городская больница» Златоуста
                   получила новые спецавтомобили</span
                 >
-              </a>
-            </li>
-            <li class="news-block__item">
-              <a href="#" class="news-block__item-link">
+              </div>
+            </article>
+            <article class="news-block__item">
+              <div class="news-block__item-box">
+                <a href="#" class="news-block__item-link"></a>
                 <picture>
                   <source
                     type="image/webp"
@@ -481,16 +490,21 @@
                 </picture>
                 <div class="news-block__item-line">
                   <p class="news-block__item-title">Коммуналка</p>
-                  <span class="news-block__item-date">02/01/2021</span>
+                  <time
+                    datetime="2021-01-02 15:00"
+                    class="news-block__item-date"
+                    >02/01/2021</time
+                  >
                 </div>
                 <span class="news-block__item-text"
                   >На перегоне между районом машзавода и проспект Гагарина
                   ограничили максимальную скорость до 40 километров в час</span
                 >
-              </a>
-            </li>
-            <li class="news-block__item news-block__item--tablet">
-              <a href="#" class="news-block__item-link">
+              </div>
+            </article>
+            <article class="news-block__item news-block__item--tablet">
+              <div class="news-block__item-box">
+                <a href="#" class="news-block__item-link"></a>
                 <picture>
                   <source
                     type="image/webp"
@@ -526,16 +540,21 @@
                 </picture>
                 <div class="news-block__item-line">
                   <p class="news-block__item-title">Коммуналка</p>
-                  <span class="news-block__item-date">02/01/2021</span>
+                  <time
+                    datetime="2021-01-02 15:00"
+                    class="news-block__item-date"
+                    >02/01/2021</time
+                  >
                 </div>
                 <span class="news-block__item-text"
                   >Домой по светлой улице. В Златоусте завершили монтаж сразу
                   двух новых линий наружного освещения</span
                 >
-              </a>
-            </li>
-            <li class="news-block__item news-block__item--desktop">
-              <a href="#" class="news-block__item-link">
+              </div>
+            </article>
+            <article class="news-block__item news-block__item--desktop">
+              <div class="news-block__item-box">
+                <a href="#" class="news-block__item-link"></a>
                 <picture>
                   <source
                     type="image/webp"
@@ -571,16 +590,21 @@
                 </picture>
                 <div class="news-block__item-line">
                   <p class="news-block__item-title">Медицина</p>
-                  <span class="news-block__item-date">02/01/2021</span>
+                  <time
+                    datetime="2021-01-02 15:00"
+                    class="news-block__item-date"
+                    >02/01/2021</time
+                  >
                 </div>
                 <span class="news-block__item-text"
                   >Ключи от медицинской помощи. «Городская больница» Златоуста
                   получила новые спецавтомобили</span
                 >
-              </a>
-            </li>
-            <li class="news-block__item news-block__item--desktop">
-              <a href="#" class="news-block__item-link">
+              </div>
+            </article>
+            <article class="news-block__item news-block__item--desktop">
+              <div class="news-block__item-box">
+                <a href="#" class="news-block__item-link"></a>
                 <picture>
                   <source
                     type="image/webp"
@@ -616,20 +640,24 @@
                 </picture>
                 <div class="news-block__item-line">
                   <p class="news-block__item-title">Коммуналка</p>
-                  <span class="news-block__item-date">02/01/2021</span>
+                  <time
+                    datetime="2021-01-02 15:00"
+                    class="news-block__item-date"
+                    >02/01/2021</time
+                  >
                 </div>
                 <span class="news-block__item-text"
                   >На перегоне между районом машзавода и проспект Гагарина
                   ограничили максимальную скорость до 40 километров в час</span
                 >
-              </a>
-            </li>
-          </ul>
+              </div>
+            </article>
+          </article>
           <a href="#" class="news-block__link">Все новости</a>
           <picture>
             <source
               type="image/webp"
-              media="(min-width: 1200px)"
+              media="(min-width: 1020px)"
               srcset="img/banner-desktop.webp 1x, img/banner-desktop@2x.webp 2x"
             />
             <source
@@ -637,7 +665,7 @@
               srcset="img/banner-mobile.webp 1x, img/banner-mobile@2x.webp 2x"
             />
             <source
-              media="(min-width: 1200px)"
+              media="(min-width: 1020px)"
               srcset="img/banner-desktop.jpg 1x, img/banner-desktop@2x.jpg 2x"
             />
             <img

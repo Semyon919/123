@@ -54,6 +54,18 @@
   display: block;
   height: 28px;
 
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:focus {
+    outline: solid 2px #373334;
+  }
+
+  &:active {
+    opacity: 0.4;
+  }
+
   @media (min-width: @tablet-width) {
     margin: 13px 0 0 0;
   }
@@ -111,6 +123,18 @@
   line-height: 27px;
   color: #373334;
   padding: 11px 0 0 0;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:focus {
+    outline: solid 2px #373334;
+  }
+
+  &:active {
+    opacity: 0.4;
+  }
 }
 
 .header__box-button {
@@ -162,6 +186,18 @@
   &:nth-child(4) .header__item-link {
     margin: 0 8px 0 0;
   }
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:focus {
+    outline: solid 2px #373334;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
 }
 
 .header__item-link {
@@ -192,6 +228,14 @@
 .header__subscribe-item {
   &:nth-child(1) {
     margin: 0 32px 0 0;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 

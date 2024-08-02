@@ -14,8 +14,17 @@
 }
 
 .premiere-block__desktop-box {
+
+  @media (min-width: @1024px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
   @media (min-width: @desktop-width) {
     display: flex;
+    flex-wrap: nowrap;
+    justify-content: inherit;
     gap: 49px;
     margin: 0 0 71px 0;
   }
@@ -40,9 +49,15 @@
   display: block;
   margin: 0 auto 16px auto;
 
+  @media (min-width: @1024px) {
+    width: 100%;
+    height: 408px;
+    margin: 0 auto 50px auto;
+  }
+
+
   @media (min-width: @desktop-width) {
     width: 726px;
-    height: 408px;
   }
 }
 
@@ -52,6 +67,12 @@
   gap: 25px;
   margin: 0 0 52px 0;
   padding: 0;
+
+  @media (min-width: @1024px) {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
 
   @media (min-width: @desktop-width) {
     display: block;
@@ -65,16 +86,20 @@
     display: none;
   }
 
-  @media (min-width: @desktop-width) {
+  @media (min-width: @1024px) {
     position: relative;
-    min-height: 132px;
-    padding: 47px 0;
+    width: 100%;
+    min-height: 100px;
 
     &--desktop {
       display: block;
     }
 
     &:nth-child(1) {
+      display: none;
+    }
+
+    &:last-child {
       display: none;
     }
 
@@ -86,12 +111,8 @@
         height: 1px;
         background-color: #ffffff;
         left: 0;
-        top: 0;
+        top: -20px;
       }
-    }
-
-    &:last-child {
-      display: none;
     }
 
     &::after {
@@ -107,6 +128,18 @@
     &:hover {
       &::after {
         height: 4px;
+      }
+    }
+  }
+
+
+  @media (min-width: @desktop-width) {
+    min-height: 132px;
+    padding: 47px 0;
+
+    &:nth-child(2) {
+      &::before {
+        top: 0;
       }
     }
   }

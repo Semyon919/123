@@ -54,6 +54,7 @@
   },
   "type": "module",
   "dependencies": {
+    "color-calendar": "^1.0.7",
     "swiper": "^11.1.5"
   }
 }

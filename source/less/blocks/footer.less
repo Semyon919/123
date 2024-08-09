@@ -1,7 +1,18 @@
 .footer {
-  position: relative;
   min-height: 254px;
   padding: 32px 24px 30px 24px;
+  width: 100%;
+  background-color: #ffffff;
+
+  @media (min-width: @desktop-width) {
+    min-height: 324px;
+    padding: 59px 0 49px 0;
+  }
+}
+
+.footer__box {
+  margin: 0 auto;
+  position: relative;
 
   &::before {
     content: "";
@@ -10,19 +21,16 @@
     height: 2px;
     background-color: #373334;
     left: 24px;
-    top: 120px;
+    top: 87px;
   }
 
   @media (min-width: @desktop-width) {
     width: 1504px;
-    min-height: 324px;
-    padding: 59px 0 49px 0;
-    margin: 0 auto;
 
     &::before {
       width: 100%;
       left: 0;
-      top: 183px;
+      top: 112px;
     }
   }
 }

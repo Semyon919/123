@@ -11,7 +11,17 @@
 
   &__title-text {
     display: block;
+    margin: 0 0 80px 0;
+
+    @media (min-width: @1024px) {
+      margin: 0 0 198px 0;
+    }
+  }
+
+  &__item {
+    display: block;
     color: #959595;
+    margin: 0 0 80px 0;
 
     @media (min-width: @desktop-width) {
       margin: 0 0 198px 0;
@@ -85,14 +95,6 @@
         background-image: url("../../img/arrow-up.png");
         margin: 39px 0 0 0;
       }
-
-      &:last-child {
-        width: 100%;
-        grid-column: 1 / -1;
-        min-height: 359px;
-        background-color: #ffffff;
-        padding: 48px 49px;
-      }
     }
   }
 
@@ -108,7 +110,8 @@
   }
 
   &__box-picture {
-    margin: 0 0 35px 0;
+    display: block;
+    margin: 0 auto 35px auto;
   }
 
   &__item-line {
@@ -134,5 +137,132 @@
     font-size: 20px;
     font-weight: 500;
     line-height: 27px;
+  }
+
+  &__line {
+    display: flex;
+    gap: 51px;
+  }
+
+  &__big-item {
+    display: none;
+    background-color: #ffffff;
+    padding: 48px;
+    position: relative;
+    margin: 0 0 70px 0;
+
+    &:hover {
+      opacity: 0.7;
+    }
+
+    &:focus {
+      outline: solid 2px #373334;
+    }
+
+    &:active {
+      opacity: 0.4;
+    }
+
+    @media (min-width: @1024px) {
+      display: block;
+    }
+
+    @media (min-width: @desktop-width) {
+      min-height: 359px;
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 23px;
+        height: 23px;
+        background-image: url("../../img/arrow-up.png");
+        right: 50px;
+        bottom: 48px;
+      }
+    }
+  }
+
+  &__item-container {
+    display: flex;
+    gap: 51px;
+  }
+
+  &__big-line {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0 23px 0;
+    gap: 40px;
+  }
+
+  &__big-text {
+    display: block;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 27px;
+    max-width: 613px;
+    margin: 0 0 70px 0;
+  }
+
+  &__big-news {
+    display: block;
+    line-height: 26px;
+    max-width: 625px;
+  }
+
+  &__pagination-list {
+    list-style: none;
+    margin: 0 auto 70px auto;
+    max-width: 300px;
+    min-height: 27px;
+    padding: 0 46px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 20px;
+      height: 17px;
+      background-image: url("../../img/left-arrow.svg");
+      background-repeat: no-repeat;
+      top: 5px;
+      left: 0;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 20px;
+      height: 17px;
+      background-image: url("../../img/right-arrow.svg");
+      background-repeat: no-repeat;
+      top: 5px;
+      right: 0;
+    }
+  }
+
+  &__pagination-item {
+    position: relative;
+
+    &:nth-child(1) {
+      &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: #9F0023;
+        bottom: 0;
+        left: 0;
+      }
+    }
+  }
+
+  &__pagination-number {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 27px;
+    margin: 0;
   }
 }

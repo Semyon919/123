@@ -1,0 +1,132 @@
+.medicine-block {
+  max-width: 985px;
+  position: relative;
+
+  &__line {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    position: relative;
+    margin: 0 0 58px 0;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 985px;
+      height: 2px;
+      background-color: #373334;
+      left: 0;
+      top: 35px;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #373334;
+    left: 0;
+    bottom: 230px;
+  }
+
+  &__title {
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+    color: #9f0023;
+    margin: 0;
+  }
+
+  &__date {
+    color: #959595;
+  }
+
+  &:nth-child(2) p {
+    margin: 0 0 106px 0;
+  }
+
+  &:nth-child(3) p {
+    margin: 0 0 50px 0;
+  }
+
+  @media (min-width: @desktop-width) {
+  &:nth-child(2) p {
+    margin: 0 0 98px 0;
+  }
+
+  &:nth-child(3) p {
+    margin: 0 0 72px 0;
+  }
+  }
+
+  h2 {
+    line-height: 24px;
+    margin: 0 0 20px 0;
+
+    @media (min-width: @desktop-width) {
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 27px;
+      margin: 0 0 29px 0;
+    }
+  }
+
+  p {
+    line-height: 24px;
+    margin: 0 0 52px 0;
+
+    @media (min-width: @desktop-width) {
+      line-height: 26px;
+
+    }
+  }
+
+  img {
+    margin: 0 0 52px 0;
+
+  @media (min-width: @desktop-width) {
+    width: 986px;
+    height: 556px;
+    margin: 0 0 48px 0;
+    }
+  }
+
+  h3 {
+    font-weight: 500;
+    line-height: 22px;
+    margin: 0;
+
+  @media (min-width: @desktop-width) {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 27px;
+    }
+  }
+
+  span {
+    display: block;
+    font-size: 12px;
+    line-height: 16px;
+    color: #959595;
+    margin: 0 0 26px 0;
+
+    @media (min-width: @desktop-width) {
+    font-size: 14px;
+    line-height: 19x;
+    }
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 38px;
+
+    @media (min-width: @desktop-width) {
+      gap: 50px;
+    }
+  }
+}

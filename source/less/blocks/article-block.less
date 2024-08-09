@@ -1,4 +1,4 @@
-.medicine-block {
+.article-block {
   max-width: 985px;
   position: relative;
 
@@ -12,22 +12,12 @@
     &::after {
       content: "";
       position: absolute;
-      width: 985px;
+      width: 100%;
       height: 2px;
       background-color: #373334;
       left: 0;
       top: 35px;
     }
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    background-color: #373334;
-    left: 0;
-    bottom: 230px;
   }
 
   &__title {
@@ -40,24 +30,6 @@
 
   &__date {
     color: #959595;
-  }
-
-  &:nth-child(2) p {
-    margin: 0 0 106px 0;
-  }
-
-  &:nth-child(3) p {
-    margin: 0 0 50px 0;
-  }
-
-  @media (min-width: @desktop-width) {
-  &:nth-child(2) p {
-    margin: 0 0 98px 0;
-  }
-
-  &:nth-child(3) p {
-    margin: 0 0 72px 0;
-  }
   }
 
   h2 {
@@ -78,7 +50,6 @@
 
     @media (min-width: @desktop-width) {
       line-height: 26px;
-
     }
   }
 
@@ -118,7 +89,7 @@
   }
 
   ul {
-    margin: 0;
+    margin: 0 0 80px 0;
     padding: 0;
     list-style: none;
     display: flex;
@@ -126,7 +97,54 @@
     gap: 38px;
 
     @media (min-width: @desktop-width) {
+      margin: 0 0 136px 0;
       gap: 50px;
+    }
+  }
+
+  li {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      background-color: #373334;
+      left: 0;
+      top: 38px;
+    }
+  }
+
+  ul li p {
+    &:first-child {
+      margin: 0 0 30px 0;
+    }
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+
+  ul li div {
+    &:last-child {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      width: inherit;
+      height: inherit;
+      background-color: inherit;
+      margin: 0;
+      min-width: 240px;
+    }
+  }
+
+  div {
+    &:last-of-type {
+      width: 100%;
+      height: 2px;
+      background-color: #373334;
+      margin: 0 0 48px 0;
     }
   }
 }

@@ -34,7 +34,7 @@
       crossorigin="anonymous"
     />
   </head>
-  <body class="page__body">
+  <body>
     <div class="page-container">
       <header class="header header--news">
         <div class="header__box">
@@ -251,7 +251,9 @@
           </ul>
         </div>
       </header>
-      <main class="main">
+    </div>
+    <main class="main">
+      <div class="page-container">
         <section class="title-block">
           <h1 class="title-block__title">
             Госпитальная база закрыта, учреждение вернётся в «доковидный» режим
@@ -409,8 +411,77 @@
             </li>
           </ul>
         </section>
-      </main>
-    </div>
+      </div>
+      <section class="comment">
+        <h2 class="comment__title">Оставьте свой комментарий</h2>
+        <form action="#" class="comment__form" method="post" id="comment-form">
+          <input
+            type="text"
+            id="name"
+            name="name"
+            class="comment__input"
+            placeholder="Имя"
+          />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            class="comment__input"
+            placeholder="E-mail"
+          />
+          <div class="comment__form-box">
+            <svg
+              width="16"
+              height="17"
+              viewBox="0 0 16 17"
+              fill="none"
+              role="img"
+              aria-label="Иконка скрепки."
+              class="comment__clip-icon"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <use href="img/icons/stack.svg#paper-clip"></use>
+            </svg>
+            <p class="comment__box-text">Прикрепить фото</p>
+          </div>
+          <input
+            type="text"
+            id="comment"
+            name="comment"
+            class="comment__input"
+            placeholder="Комментарий"
+          />
+        </form>
+        <button
+          type="submit"
+          form="comment-form"
+          class="comment__submit-button"
+        >
+          Отправить
+        </button>
+        <p class="comment__approval-text">
+          Нажимая на кнопку, я соглашаюсь на обработку моих персональных данных
+        </p>
+        <div class="comment__extra-box">
+          <p class="comment__extra-text">3 комментария</p>
+          <div class="comment__read-line">
+            <p class="comment__read-text">Читать все</p>
+            <svg
+              width="10"
+              height="7"
+              viewBox="0 0 10 7"
+              fill="none"
+              role="img"
+              aria-label="Иконка стрелки вниз."
+              class="comment__arrow-icon"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <use href="img/icons/stack.svg#white-down-arrow"></use>
+            </svg>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer class="footer">
       <div class="footer__box">
         <h3 class="footer__title">Подписывайтесь на нас:</h3>

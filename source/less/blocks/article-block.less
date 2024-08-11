@@ -1,6 +1,12 @@
 .article-block {
   max-width: 985px;
   position: relative;
+  padding: 0 24px;
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+  }
+
 
   &__line {
     display: flex;

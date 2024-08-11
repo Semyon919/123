@@ -1,0 +1,146 @@
+.comment {
+  min-height: 569px;
+  background-color: #373334;
+  padding: 52px 24px 50px 24px;
+
+  @media (min-width: @desktop-width) {
+    padding: 90px 120px 108px 120px;
+  }
+
+  &__title {
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 40px;
+  color: #ffffff;
+  margin: 0 0 52px 0;
+
+  @media (min-width: @1024px) {
+  font-size: 52px;
+  line-height: 65px;
+  margin: 0 0 54px 0;
+  }
+  }
+
+  &__form {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0 52px 0;
+    gap: 28px;
+
+    @media (min-width: @1024px) {
+      max-width: 985px;
+      gap: 50px;
+      margin: 0 0 82px 0;
+    }
+  }
+
+  &__input {
+    position: relative;
+    padding: 0;
+    border: none;
+    background-color: inherit;
+    border-bottom: 2px solid #ffffff;
+    width: 100%;
+    min-height: 36px;
+    color: #ffffff;
+    order: -1;
+
+
+    &:last-child {
+      width: 100%;
+    }
+
+    &::placeholder {
+      font-family: "Open Sans", sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 22px;
+      color: #ffffff;
+    }
+
+    @media (min-width: @1024px) {
+      width: 338px;
+    }
+  }
+
+  &__form-box {
+    display: flex;
+    gap: 10px;
+  }
+
+  &__box-text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19px;
+    margin: 0;
+    color: #ffffff;
+  }
+
+  &__submit-button {
+    border: 2px solid #ffffff;
+    width: 100%;
+    min-height: 50px;
+    border-radius: 56px;
+    background-color: inherit;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 16px;
+    text-align: center;
+    color: #ffffff;
+    padding: 0;
+    margin: 0 0 16px 0;
+
+    @media (min-width: @1024px) {
+      width: 162px;
+    }
+  }
+
+  &__approval-text {
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    color: #ffffff;
+    margin: 0 0 52px 0;
+
+    @media (min-width: @1024px) {
+      display: none;
+    }
+  }
+
+  &__extra-box {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__extra-text {
+    font-size: 14px;
+    line-height: 19px;
+    color: #ffffff;
+    margin: 0;
+
+    @media (min-width: @1024px) {
+      display: none;
+    }
+  }
+
+  &__read-line {
+    display: flex;
+    gap: 12px;
+
+    @media (min-width: @1024px) {
+      display: none;
+    }
+  }
+
+  &__read-text {
+    font-weight: 500;
+    line-height: 16px;
+    margin: 0;
+    color: #ffffff;
+  }
+
+  &__arrow-icon {
+    margin: 4px 0 0 0;
+  }
+}
